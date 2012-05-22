@@ -2,6 +2,10 @@ Happy Box
 =========
 ###An experiment with closures and DOM optimizations.
 
+Demo
+----
+Live demo at http://happybox.bluegouda.com
+
 Concept
 -------
 Happy Box is a StumpleUpon clone with a twist. Instead of a single ‘Stumble’ button Happy Box displays a quickly changing assortment of colors. Each color is associated with a URL. When a user clicks a color they are immediately redirected to the associated URL. If a color has no URL the user is asked to add one so others who find the same color will be redirected. 
@@ -23,7 +27,3 @@ A color in the color space represented by the seed list is not guaranteed to hav
 Backend
 -------
 While the backend for Happy Box has not been finished, there have been plans to do so. The basic framework is done and powered by Node.js with Redis as its database.
-
-Demo
-----
-Live demo at http://happybox.bluegouda.com
