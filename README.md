@@ -2,6 +2,8 @@ Happy Box
 =========
 ###An experiment with closures and DOM optimizations.
 
+*Warning: Happy Box is just an experiment and may induce seizures in some people... Be careful!
+
 Demo
 ----
 Live demo at http://happybox.bluegouda.com
