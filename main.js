@@ -16,7 +16,7 @@ var HappyHolder = React.createClass({
 	render: function() {
 		var boxes = [];
 
-		for (var i = 0; i < 10000; i++) {
+		for (var i = 0; i < 1000; i++) {
 			boxes.push(<HappyBox key={i} color={this.getColor()}/>)
 		};
 
@@ -26,7 +26,9 @@ var HappyHolder = React.createClass({
 	}
 });
 
+var PureRenderMixin = require('react/addons').PureRenderMixin;
 var HappyBox = React.createClass({
+	mixins: [PureRenderMixin],
 	render: function() {
 		var style = {
 			'background-color': this.props.color

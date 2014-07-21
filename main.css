@@ -15,10 +15,9 @@ html, body {
 
 .happy-box {
 	position: relative;
-	height: 1%;
-	width: 1%;
-	display: inline-block;
-	margin-bottom: -4px;
+	height: 4%;
+	width: 2%;
+	float: left;
 	z-index: 1;
 }
 
