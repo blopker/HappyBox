@@ -40,7 +40,7 @@ var HappyBox = React.createClass({
 	}
 });
 
-React.renderComponent(
+React.render(
   <HappyHolder/>,
   document.body
 )
