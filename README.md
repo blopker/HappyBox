@@ -6,7 +6,7 @@ Happy Box
 
 Demo
 ----
-Live demo at http://happybox.bluegouda.com
+Live demo at http://blopker.github.io/HappyBox
 
 Concept
 -------
