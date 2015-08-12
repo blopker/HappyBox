@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^4.2.3",
-    "react": "^0.11.0",
-    "reactify": "^0.14.0",
-    "watchify": "^0.10.2"
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "watchify": "^3.3.1"
   }
 }
