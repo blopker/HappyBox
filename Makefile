@@ -1,5 +1,5 @@
-BROWSERIFY="node_modules/browserify/bin/cmd.js"
-WATCHIFY="node_modules/watchify/bin/cmd.js"
+BROWSERIFY="node_modules/.bin/browserify"
+WATCHIFY="node_modules/.bin/watchify"
 
 all: install
 	@ mkdir -p build
@@ -9,10 +9,10 @@ install:
 	npm install
 
 watch:
-	@ $(WATCHIFY) -t reactify -o build/main.js main.js
+	@ $(WATCHIFY) -t [ babelify --presets [ react ] ] main.js -o build/main.js
 
 build:
-	@ $(BROWSERIFY) -t reactify -o build/main.js main.js
+	@ $(BROWSERIFY) -t [ babelify --presets [ react ] ] main.js -o build/main.js
 
 clean:
 	@ rm -rf node_modules
