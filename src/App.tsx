@@ -25,6 +25,9 @@ function HappyBoxes() {
       onMouseMove={() => {
         setCorlors(getColors());
       }}
+      onTouchMove={() => {
+        setCorlors(getColors());
+      }}
     >
       <For each={colors()}>{(i) => <HappyBox color={i} />}</For>
     </div>
