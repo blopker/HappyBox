@@ -1,21 +1,14 @@
-BROWSERIFY="node_modules/.bin/browserify"
-WATCHIFY="node_modules/.bin/watchify"
+.PHONY: *
 
-all: install
-	@ mkdir -p build
-	@ $(MAKE) build
+dev:
+	npm run dev
 
 install:
 	npm install
 
-watch:
-	@ $(WATCHIFY) -t [ babelify --presets [ react ] ] main.js -o build/main.js
-
 build:
-	@ $(BROWSERIFY) -t [ babelify --presets [ react ] ] main.js -o build/main.js
+	@npm run build
 
 clean:
-	@ rm -rf node_modules
-	@ rm -rf build
-
-.PHONY: build watch
+	@rm -rf node_modules
+	@rm -rf build

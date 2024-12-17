@@ -1,0 +1,1 @@
+html,body{margin:0;height:100%;width:100%}*{box-sizing:border-box}.happy-boxes,.happy-container{height:100%;width:100%}.happy-box{position:relative;height:4vw;width:4vw;float:left;z-index:1}.happy-box:hover{z-index:100}
