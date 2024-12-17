@@ -8,9 +8,9 @@ function getColor() {
 }
 
 function getColors() {
-  const colors = [];
+  const colors = Array(total);
   for (let i = 0; i < total; i++) {
-    colors.push(getColor());
+    colors[i] = getColor();
   }
   return colors;
   // return [...Array(2500).keys()].map(getColor);
